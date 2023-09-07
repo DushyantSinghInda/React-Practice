@@ -1,5 +1,14 @@
+import Chai from "./Chai";
+
 function App() {
-  return <h1>Hello World with vite | Dushyant</h1>;
+  const username = "chai aur code";
+  return (
+    <>
+      <Chai />
+      <h2>Hello World with vite | Dushyant</h2>
+      <h3>{username}</h3>
+    </>
+  );
 }
 
 export default App;
