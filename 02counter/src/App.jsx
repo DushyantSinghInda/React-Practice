@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -9,13 +7,18 @@ function App() {
   // let counter = 15;
 
   const Increment = () => {
-    setCounter(counter + 1);
-    console.log(counter);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);  This is the example of fiber in React
   };
   const Decrement = () => {
     if (counter === 0) return;
     setCounter(counter - 1);
-    console.log(counter);
   };
   return (
     <>
