@@ -13,14 +13,16 @@ export default function Github() {
   //   }, []);
 
   const data = useLoaderData();
+  console.log(data);
 
   return (
     <div className="text-center m-4 bg-gray-600 text-white p-4 text-3xl">
+      <h1 className="mb-7 text-5xl text-orange-500">{data.name}</h1>
       Github followers : {data.public_repos}
       <img
         src={data.avatar_url}
         alt="Profile Image"
-        className="mx-auto py-3 w-60"
+        className="mx-auto my-5 w-72 rounded-2xl aspect-square"
       />
     </div>
   );
